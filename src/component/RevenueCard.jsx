@@ -7,7 +7,7 @@ export const RevenueCard=({
 })=>{
   return (
     <div className='bg-white rounded shadow-md p-10'>
-        <div>
+        <div className='text-gray-700'>
             {title}
             ?
         </div>
