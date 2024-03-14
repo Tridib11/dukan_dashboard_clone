@@ -6,7 +6,7 @@ export const RevenueCard=({
     amount
 })=>{
   return (
-    <div className='bg-white rounded shadow-md p-2'>
+    <div className='bg-white rounded shadow-md p-2 '>
         <div className='text-gray-700 pt-2'>
             <div className='flex gap-2'>
 
@@ -22,13 +22,19 @@ export const RevenueCard=({
             <div  className='font-semibold text-2xl'>
              ₹ {amount}
             </div>
-            {orderCount ? <div className='flex'>
-                <div className='text-blue-700 cursor-pointer underline font-medium' >
-                {orderCount} orders
+            {orderCount ? <div className='flex cursor-pointer font-medium flex-col justify-center'>
+                <div className='flex'>
+
+                <div className='text-blue-700 cursor-pointer underline font-bold' >
+                    {orderCount} orders
                 </div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-            <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-            </svg>
+                <div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>
+                </div>
+                </div>
             </div>:null}
 
         </div>     
